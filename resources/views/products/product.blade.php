@@ -13,7 +13,7 @@
                     <p class="card-text">{{$product->description}}</p>
                     <select name="quantity" class="browser-default custom-select">
                         <option selected>Quantity</option>
-                        @for($i = 0; $i < 11; $i++)
+                        @for($i = 1; $i < 11; $i++)
                             <option value="{{$i}}">{{$i}}</option>
                         @endfor
                     </select>
