@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Database\Seeder;
-
+use Faker\Factory as Faker;
 class ProductSeeder extends Seeder
 {
     /**
@@ -11,7 +11,7 @@ class ProductSeeder extends Seeder
      */
     public function run()
     {
-        $faker = \Faker\Factory::create('fr_FR');
+        $faker = Faker::create('fr_FR');
         for ($i = 0; $i < 10; $i++)
         {
             $product = new \App\Product();
